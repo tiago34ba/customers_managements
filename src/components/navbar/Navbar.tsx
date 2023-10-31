@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="logo">
         <img src="logo.svg" alt="" />
-        <span>lamadmin</span>
+        <span>dashboard </span>
       </div>
       <div className="icons">
         <img src="/search.svg" alt="" className="icon" />
@@ -17,12 +17,12 @@ const Navbar = () => {
         </div>
         <div className="user">
           <img
-            src="https://images.pexels.com/photos/11038549/pexels-photo-11038549.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+            src="https://png.pngtree.com/element_pic/00/16/07/06577d23c2b9d68.jpg"
             alt=""
           />
-          <span>Jane</span>
+          <span>Paulo Tiago Magalhães</span>
         </div>
-        <img src="/settings.svg" alt="" className="icon" />
+        <img src="/logo194.png" alt="" className="icon" />
       </div>
     </div>
   );

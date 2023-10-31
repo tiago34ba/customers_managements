@@ -9,6 +9,7 @@ import Login from "./pages/login/Login";
 import "./styles/global.scss";
 import User from "./pages/user/User";
 import Product from "./pages/product/Product";
+import Clients from "./pages/client/client";
 import {
   QueryClient,
   QueryClientProvider,
@@ -49,6 +50,10 @@ function App() {
         {
           path: "/users",
           element: <Users />,
+        },
+        {
+          path: "/clientes",
+          element: <Clients />,
         },
         {
           path: "/products",
