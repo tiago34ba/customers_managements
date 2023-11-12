@@ -2,8 +2,9 @@ import Home from "./pages/home/Home";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Users from "./pages/users/Users";
 import Products from "./pages/products/Products";
-import Navbar from "./components/navbar/Navbar";
+import Site from "./pages/site/Site";
 import Footer from "./components/footer/Footer";
+import Pricing from "./components/pricing/Pricing";
 import Menu from "./components/menu/Menu";
 import Login from "./pages/login/Login";
 import "./styles/global.scss";
@@ -14,6 +15,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from "@tanstack/react-query";
+import Navbar from "./components/navbar/Navbar";
 
 
 const queryClient = new QueryClient();
@@ -72,6 +74,14 @@ function App() {
     {
       path: "/login",
       element: <Login />,
+    },
+    {
+      path: "/site",
+      element: <Site />,
+    },
+    {
+      path: "/price",
+      element: <Pricing />,
     },
   ]);
 
