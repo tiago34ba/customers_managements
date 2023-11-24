@@ -23,10 +23,11 @@ const Login = () => {
             <div className="flex flex-col items-center justify-center mx-auto h-screen">
 
             <div className='static md:absolute top-24 right-24 md:initial mb-5 text-3xl font-bold font-display' >
+                <a href="#" className='text-neutralDark'>Invision</a>
             </div>
 
                 <div>
-                    <h1 className='text-center text-2xl'>Bem vindo a SSait Tecnologia</h1>
+                    <h1 className='text-center text-2xl'>Welcome to Invision</h1>
 
                     <form className='flex flex-col my-5' onSubmit={onSubmit} >
 

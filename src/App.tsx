@@ -1,21 +1,23 @@
 import Home from "./pages/home/Home";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Users from "./pages/users/Users";
-import Products from "./pages/products/Products";
+import Users from "./pages/registers/users/Users";
+import Products from "./pages/registers/products/Products";
 import Site from "./pages/site/Site";
 import Footer from "./components/footer/Footer";
 import Pricing from "./components/pricing/Pricing";
 import Menu from "./components/menu/Menu";
-import Login from "./pages/login/Login";
+import Login from "./pages/login/index";
 import "./styles/global.scss";
-import User from "./pages/user/User";
-import Product from "./pages/product/Product";
-import Clients from "./pages/client/client";
+import "./App.css"
+import User from "./pages/registers/user/User";
+import Product from "./pages/registers/product/Product";
+import Clients from "./pages/registers/client/client";
 import {
   QueryClient,
   QueryClientProvider,
 } from "@tanstack/react-query";
 import Navbar from "./components/navbar/Navbar";
+import Register from "./pages/register/index";
 
 
 const queryClient = new QueryClient();
@@ -41,6 +43,10 @@ function App() {
   };
 
   const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Site />,
+    },
     {
       path: "/",
       element: <Layout />,
@@ -76,12 +82,16 @@ function App() {
       element: <Login />,
     },
     {
-      path: "/site",
-      element: <Site />,
+      path: "/Layout",
+      element: <Layout />,
     },
     {
       path: "/price",
       element: <Pricing />,
+    },
+    {
+      path:"/Register",
+      element: <Register />
     },
   ]);
 
